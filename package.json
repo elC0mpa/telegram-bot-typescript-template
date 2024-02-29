@@ -1,0 +1,31 @@
+{
+  "name": "typescript-telegram-bot-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts",
+    "prepare": "husky install",
+    "populate": "nodemon src/utils/db/scripts.ts",
+    "format": "prettier --plugin-search-dir . --write .",
+    "build": "tsc",
+    "start": "redis-server --daemonize yes && NODE_ENV=production node built/index.js"
+  },
+  "author": "el_c0mpa",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "dayjs": "^1.10.6",
+    "dotenv": "^10.0.0",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}

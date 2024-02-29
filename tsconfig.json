@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "allowJs": true,
+    "module": "CommonJS",
+    "target": "ES2016",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnreachableCode": false,
+    "esModuleInterop": true,
+    "noImplicitReturns": false
+  },
+  "include": ["./src/**/*"]
+}
